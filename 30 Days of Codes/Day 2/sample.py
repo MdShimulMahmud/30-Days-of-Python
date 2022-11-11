@@ -1,0 +1,1 @@
+print('shimul ki obostha?')
