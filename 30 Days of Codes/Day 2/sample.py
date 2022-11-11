@@ -1,1 +1,0 @@
-print('shimul ki obostha?')
