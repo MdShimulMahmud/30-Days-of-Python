@@ -1,13 +1,13 @@
-# def outer(message):
-#     print("I am from outer function!")
+def outer(message):
+    print("I am from outer function!")
 
-#     def inner():
-#         print("I am from inner function! ")
-#         print(f"Passing message : {message}")
-#     return inner 
+    def inner():
+        print("I am from inner function! ")
+        print(f"Passing message : {message}")
+    return inner 
 
-# x = outer("Hello Shimul")
-# x()
+x = outer("Hello Shimul")
+x()
 
 def decorator(original_func):
     print(f"wrapper executed before {original_func.__name__}() ")
@@ -19,3 +19,7 @@ def decorator(original_func):
         return original_func() + "extra string"
 
     return wrapper
+
+
+
+    
